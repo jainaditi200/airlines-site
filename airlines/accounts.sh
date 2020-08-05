@@ -1,11 +1,12 @@
-
-
 #! /bin/bash
-  for i in `cat adi`;
-  do echo $i;id $i;
-  useradd $i;
-  echo "$i:xyz" | chpasswd; 
-  done
+read -p 'username:', user
+read -sp 'pass:', pass
+echo "username : $user"
+echo "password: $pass"
+
+
+  
+
 
 
 
